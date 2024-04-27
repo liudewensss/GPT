@@ -60,8 +60,9 @@ yarn install
 
 # Prompt user for environment variables
 read -p "Enter GOOGLE_API_KEY: " GOOGLE_API_KEY
+read -p "Enter CODE: " CODE
 read -p "Enter PORT: " PORT
 
 # Build and run the project using the environment variables
-GOOGLE_API_KEY=$GOOGLE_API_KEY  PORT=$PORT yarn build
-GOOGLE_API_KEY=$GOOGLE_API_KEY  PORT=$PORT yarn start
+GOOGLE_API_KEY=$GOOGLE_API_KEY CODE=$CODE PORT=$PORT yarn build
+GOOGLE_API_KEY=$GOOGLE_API_KEY CODE=$CODE PORT=$PORT yarn start
